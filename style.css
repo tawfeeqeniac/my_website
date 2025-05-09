@@ -156,8 +156,8 @@ a {
 }
 
 *#quoteimage {
-  width: 60%;
-  height: auto;
+  width: 400px;
+  height: 500px;
   margin: 10px auto;
   display: block;
 }
