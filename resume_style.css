@@ -16,7 +16,7 @@ nav h1 {
 
 @media (max-width: 600px) {
   nav h1 {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 2;
     padding: 0 10px 0 0;
   }
@@ -44,7 +44,7 @@ nav a {
 
 @media (max-width: 600px) {
   nav a {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
