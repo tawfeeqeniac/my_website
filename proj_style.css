@@ -194,7 +194,7 @@ ul li::marker {
   display: block;
 
   height: 50px;
-  width: 30px;
+  width: 15px;
 }
 
 @media (max-width: 600px) {
