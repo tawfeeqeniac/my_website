@@ -32,6 +32,7 @@
               >stawfeeqofficial@gmail.com</a
             >
           </li>-->
+          <li><a href="#" id="email-link">stawfeeqofficial@gmail.com</a></li>          
         </ul>
         <h2>Phone Number</h2>
         <ul>
@@ -58,5 +59,29 @@
       </section>
     </main>
     <footer>@2025 Tawfeeq. All rights reserved.</footer>
+
+<script>
+      document
+        .getElementById("email-link")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          const email = "stawfeeqofficial@gmail.com";
+          const subject = "Hello";
+          const body = "I love your website!";
+          const isMobile =
+            /iphone|ipad|ipod|android|blackeberry|iemobile|windows phone|windows ce/i.test(
+              navigator.userAgent
+            );
+          if (isMobile) {
+            window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+          } else {
+            window.open(
+              `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`,
+              "_blank"
+            );
+          }
+        });
+    </script>
+    
   </body>
 </html>
