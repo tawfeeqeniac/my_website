@@ -1,0 +1,133 @@
+body {
+  background-color: black;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+nav h1 {
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  nav h1 {
+    font-size: 16px;
+    line-height: 2;
+    padding: 0 10px 0 0;
+  }
+}
+
+nav ul {
+  padding: 0 5px 0 0;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    gap: 14px;
+  }
+}
+
+nav a {
+  color: greenyellow;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    font-size: 14px;
+  }
+}
+
+nav a:hover {
+  color: magenta;
+  transition-duration: 0.5s;
+}
+
+main {
+  padding: 90px 0 0 0;
+}
+
+@media (max-width: 600px) {
+  main {
+    max-width: 600px;
+  }
+}
+.hero h3 {
+  color: greenyellow;
+  padding: 20px 0 0 0;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .hero h3 {
+    font-size: 16px;
+    padding: 3px 0 0 0;
+  }
+}
+
+.hero p {
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .hero p {
+    font-size: 18px;
+  }
+}
+
+.hero h4,
+h5 {
+  color: white;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .hero h5 {
+    font-size: 16px;
+  }
+}
+
+.hero li {
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .hero li {
+    font-size: 18px;
+  }
+}
+
+.hero a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .hero a {
+    font-size: 17px;
+  }
+}
+
+.hero a:hover {
+  color: magenta;
+  transition-duration: 0.5s;
+  text-decoration: underline;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 50px 0 25px 0;
+}

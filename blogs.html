@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=devive-width , initial-scale=1.0" />
+    <title>PHITECT-BLOGS</title>
+    <link rel="stylesheet" href="blogs_style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>PHITECH - BLOGS AND BOOKS</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="About_Me.html">About_Me</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <button class="button1" onclick="content1()">SHOW INTRO</button>
+        <div id="intro-content" class="hidden">
+          <h2>Welcome to my Blogs</h2>
+          <h3>Introduction</h3>
+          <p>
+            Welcome to my blog section! Here, I share my thoughts, insights, and
+            experiences in the world of data science, machine learning, and
+            technology. My goal is to provide valuable information and resources
+            that can help you in your own journey. Whether you are a beginner or
+            an experienced professional, I hope you find something useful here.
+            From case studies to book reviews, my blog covers a wide range of
+            topics that reflects my interests and expertise. Thank you for
+            visiting, and I hope you enjoy reading my blogs.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>@2025 Tawfeeq. All rights reserved.</footer>
+    <script>
+      function content1() {
+        const content = document.getElementById("intro-content");
+        const button = document.querySelector(".button1");
+
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden");
+          button.textContent = "HIDE INTRO";
+        } else {
+          content.classList.add("hidden");
+          button.textContent = "SHOW INTRO";
+        }
+      }
+    </script>
+  </body>
+</html>

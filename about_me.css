@@ -1,0 +1,91 @@
+body {
+  background-color: black;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+main {
+  padding: 160px 0 0 0;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 180px 0 20px 0;
+}
+
+nav h1 {
+  color: white;
+  text-align: center;
+  padding: 20px 0 15px 0;
+}
+
+@media (max-width: 600px) {
+  nav h1 {
+    font-size: 18px;
+  }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    gap: 10px;
+    padding: 0 8px 0 0;
+  }
+}
+
+nav a {
+  color: greenyellow;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    font-size: 15px;
+  }
+}
+
+nav a:hover {
+  color: magenta;
+  transition-duration: 0.5s;
+  text-decoration: underline;
+}
+.hero h2 {
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  padding: 200px 0 0 0;
+  animation: colorChange 2.5s infinite alternate;
+}
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 30px;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: yellowgreen;
+  }
+  50% {
+    color: red;
+  }
+
+  100% {
+    color: magenta;
+  }
+}

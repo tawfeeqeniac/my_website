@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tawfeeq-Projects</title>
+    <link rel="stylesheet" href="proj_style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Tawfeeq Data Enthusiast-Projects & Blogs</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="About_Me.html">About_Me</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <button class="button1" onclick="content1()">Show Project-1</button>
+
+        <div id="intro-content" class="hidden">
+          <h2>Sales Analysis Project – Tracking Box-Wise Product Sales</h2>
+          <h3>Introduction:</h3>
+          <p>
+            Over a three-month period, I assisted my father in managing his
+            wholesale business, handling responsibilities like stock
+            procurement, billing, logistics, and truck loading/unloading. During
+            this experience, I encountered a real-world data challenge.<em>
+              Although our billing software had a basic sales dashboard, it
+              couldn’t tell us how many full boxes of products were sold. For
+              example, we purchased notebooks from brands like Camlin and
+              Classmate in standard box units (e.g., 1 box = 100 pieces).
+              However, customers would often buy in smaller quantities—such as
+              20, 30, or 50 pieces. To understand how many boxes' worth of each
+              product were actually sold, I took on the task of analyzing over
+              100 PDF sales bills. This project involved multiple stages of the
+              data pipeline:</em
+            >
+          </p>
+
+          <ul>
+            <li>
+              <em class="highlight">Data Acquisition:</em> Extracted raw data
+              from over 100 PDF invoices using Python and pdfminer.
+            </li>
+            <li>
+              <em class="highlight">Data Cleaning/Transformation:</em> Parsed
+              and structured unorganized text data using regex and pandas.
+            </li>
+            <li>
+              <em class="highlight">Feature Engineering:</em> Converted
+              individual piece counts into box-equivalents for each product.
+            </li>
+            <li>
+              <em class="highlight">Data Analysis:</em> Aggregated and analyzed
+              the cleaned data in Excel to generate product-wise and
+              customer-wise sales insights.
+            </li>
+          </ul>
+          <p>
+            This hands-on experience helped me apply core data wrangling
+            techniques to solve a meaningful business problem and derive
+            actionable insights from unstructured data.
+          </p>
+        </div>
+        <button class="button2 hidden" onclick="content2()">Show Images</button>
+
+        <div id="project-images" class="hidden">
+          <img src="bill1.png" alt="project_images" />
+          <img src="code1.png" alt="code image" />
+          <img src="code2.png" alt="code image" />
+          <img src="code3.png" alt="code image" />
+          <img src="Dashimg.png" alt="Dashboard" />
+        </div>
+      </section>
+    </main>
+
+    <footer>@2025 Tawfeeq. All rights reserved.</footer>
+
+    <script>
+      function content1() {
+        const content = document.getElementById("intro-content");
+        const button = document.querySelector(".button1");
+        const imagebutton = document.querySelector(".button2");
+
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden");
+          imagebutton.classList.remove("hidden");
+          button.textContent = "Hide Project-1";
+        } else {
+          content.classList.add("hidden");
+          imagebutton.classList.add("hidden");
+          document.getElementById("project-images").classList.add("hidden");
+          document.querySelector(".button2").textContent = "Show Images";
+          button.textContent = "Project-1 Sales Analysis";
+        }
+      }
+
+      function content2() {
+        const img1 = document.getElementById("project-images");
+        const btn = document.querySelector(".button2");
+        if (img1.classList.contains("hidden")) {
+          img1.classList.remove("hidden");
+          btn.textContent = "Hide Images";
+        } else {
+          img1.classList.add("hidden");
+          btn.textContent = "Show Images";
+        }
+      }
+    </script>
+  </body>
+</html>

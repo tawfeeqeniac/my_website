@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tawfeeq Data Enthusiast - Projects & Blogs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Tawfeeq Data Enthusiast - Projects & Blogs</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="About_Me.html">About_Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h2>Welcome to my personal space on the web!</h2>
+
+        <p>
+          <em>
+            Hi, I'm Tawfeeq — a data enthusiast passionate about machine
+            learning, biotech, genetics, and the power of data.</em
+          >
+
+          Explore my projects and blogs where I share insights on technology,
+          science, and the ideas that inspire me
+        </p>
+        <button id="quoteButton">Quotes</button>
+        <div id="quoteImage" class="hidden">
+          <img
+            src="Screenshot 2025-05-06 014736.png"
+            alt="Leonardo da Vinci quotes"
+            width="450"
+            height="400"
+          />
+
+          <img src="quote_2.jpg" alt="edison quotes" width="460" height="400" />
+
+          <img src="quote3.jpg" alt="edion quotes" width="550" height="400" />
+        </div>
+      </section>
+    </main>
+    <footer>@2025 Tawfeeq. All rights reserved.</footer>
+
+    <script>
+      const quoteButton = document.getElementById("quoteButton");
+      const quoteImg = document.getElementById("quoteImage");
+      const quoteImg2 = document.getElementById("quoteImage2");
+      const quoteImg3 = document.getElementById("quoteImage3");
+
+      quoteButton.addEventListener("click", function () {
+        quoteImg.classList.toggle("hidden");
+        quoteImg2.classList.toggle("hidden");
+        quoteImg3.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

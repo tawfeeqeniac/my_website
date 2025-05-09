@@ -1,0 +1,205 @@
+/*body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}*/
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 450px 0 20px 0;
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding: 2000px 0 20px 0;
+    margin-top: auto;
+  }
+}
+
+header {
+  padding: 20px;
+  box-shadow: 0 2px 0 rgba(26, 9, 211, 0.1);
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+@media (max-width: 600px) {
+  header {
+    max-width: 500px;
+  }
+}
+
+main {
+  padding: 140px 0 0 0;
+}
+
+nav h1 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  nav h1 {
+    font-size: 16px;
+    padding: 0 38px 0 0;
+    line-height: 2;
+  }
+}
+
+nav ul {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    gap: 10px;
+    padding: 0 40px 0 0;
+  }
+}
+
+nav a {
+  color: greenyellow;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    font-size: 14px;
+  }
+}
+
+nav a:hover {
+  color: magenta;
+  transition-duration: 0.5s;
+  text-decoration: underline;
+}
+
+hero {
+  padding: 10px 0 0 0;
+}
+
+.hero h2 {
+  padding: 10px 0px 0px 0px;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 19px;
+  }
+}
+
+.hero h3 {
+  color: greenyellow;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .hero h3 {
+    font-size: 19px;
+  }
+}
+
+.hero p {
+  color: white;
+  font-size: 20px;
+  margin-left: 0px;
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 600px) {
+  .hero p {
+    font-size: 18px;
+  }
+}
+
+.hero li {
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .hero li {
+    font-size: 18px;
+  }
+}
+
+.highlight {
+  color: greenyellow;
+}
+
+ul li::marker {
+  color: white;
+  list-style: circle;
+}
+
+.button1 {
+  width: 100%;
+  padding: 10px 0 0 0;
+  border: 2px solid yellowgreen;
+  background-color: black;
+  color: yellowgreen;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.button1:hover {
+  background-color: yellowgreen;
+  color: rgb(0, 0, 0);
+  transition: 0.5s ease;
+}
+.hidden {
+  display: none !important;
+}
+
+.button2 {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid yellowgreen;
+  background-color: black;
+  color: yellowgreen;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.button2:hover {
+  background-color: yellowgreen;
+  color: rgb(0, 0, 0);
+  transition: 0.5s ease;
+}
+
+#project-images {
+  display: block;
+
+  height: 50px;
+  width: 50px;
+}
+
+@media (max-width: 600px) {
+  #project-images img {
+    height: 400px;
+    width: 400px;
+  }
+}
