@@ -20,6 +20,10 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="auth-links">
+        <a href="#" id="loginLink">Login</a>
+        <a href="#" id="registerLink">Register</a>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -45,21 +49,67 @@
 
           <img src="quote_2.jpg" alt="edison quotes" width="460" height="400" />
 
-          <img src="quote3.jpg" alt="edion quotes" width="550" height="400" />
+          <img src="quote3.jpg" alt="edion quotes" width="530" height="400" />
         </div>
       </section>
     </main>
+
+    <div id="registerModal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close" id="closeRegister">&times;</span>
+        <h2>Register</h2>
+        <form id="registerForm">
+          <label for="username">Username:</label>
+          <input type="text" id="username" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" required />
+
+          <label for="confirmPassword">Confirm Pasword:</label>
+          <input type="password" id="confirmPassword" required />
+
+          <button type="button" id="sendCode" disabled>Send Code</button>
+        </form>
+      </div>
+    </div>
     <footer>@2025 Tawfeeq. All rights reserved.</footer>
 
     <script>
       const quoteButton = document.getElementById("quoteButton");
       const quoteImg = document.getElementById("quoteImage");
-     
 
       quoteButton.addEventListener("click", function () {
         quoteImg.classList.toggle("hidden");
-       
       });
+
+      const registerLink = document.getElementById("registerLink");
+      const registerModal = document.getElementById("registerModal");
+      const closeRegister = document.getElementById("closeRegister");
+      const sendCodeBtn = document.getElementById("sendCode");
+      const emailInput = document.getElementById("email");
+      const phoneInput = document.getElementById("phone");
+
+      registerLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        registerModal.classList.remove("hidden");
+      });
+
+      closeRegister.addEventListener("click", function () {
+        registerModal.classList.add("hidden");
+      });
+
+      emailInput.addEventListener("input", toggleSendCode);
+      phoneInput.addEventListener("input", toggleSendCode);
+
+      function toggleSendCode() {
+        sendCodeBtn.disabled = !(emailInput.value && phoneInput.value);
+      }
     </script>
   </body>
 </html>
