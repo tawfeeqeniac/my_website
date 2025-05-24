@@ -59,6 +59,7 @@ nav h1 {
     font-size: 16px; /*Smaller font on mobile*/
     line-height: 1.3;
     padding: 0 7px 0 0;
+    margin-top: 25px;
   }
 }
 
@@ -96,6 +97,127 @@ nav a:hover {
   color: #f516d4;
   text-decoration: underline;
   transition: color 0.5s;
+}
+
+.auth-links {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+@media (max-width: 600px) {
+  .auth-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.auth-links a {
+  color: greenyellow;
+  font-weight: bold;
+  margin-left: 15px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .auth-links a {
+    color: greenyellow;
+
+    margin-left: 15px;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .auth-links a :last-child {
+    color: greenyellow;
+    margin-right: 0;
+  }
+}
+
+.auth-links a:hover {
+  color: magenta;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.modal {
+  position: fixed;
+  z-index: 2000;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: auto;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  border-radius: 20px;
+  border: 3px solid #999;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    position: fixed;
+    z-index: 2000;
+    top: 40;
+    left: 50;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+}
+
+.modal-content {
+  background-color: #222;
+  color: greenyellow;
+  margin: 10% auto;
+  padding: 1px 50px 10px 32px;
+  border: 2px solid #888;
+  width: 99%;
+  max-width: 200px;
+  border-radius: 20px;
+}
+
+.modal-content h2 {
+  color: white;
+
+  padding: 0 0 0 65px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+}
+
+.modal-content button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.modal-content button:hover {
+  color: magenta;
+  transition-duration: 0.5s;
+}
+
+.close {
+  color: red;
+  float: right;
+  font-size: 34px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: -40px;
 }
 
 body {
