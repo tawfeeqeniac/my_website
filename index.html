@@ -94,6 +94,8 @@
       const sendCodeBtn = document.getElementById("sendCode");
       const emailInput = document.getElementById("email");
       const phoneInput = document.getElementById("phone");
+      const passwordInput = document.getElementById("password");
+      const confirmPasswordInput = document.getElementById("confirmPassword");
 
       registerLink.addEventListener("click", function (e) {
         e.preventDefault();
@@ -106,6 +108,30 @@
 
       emailInput.addEventListener("input", toggleSendCode);
       phoneInput.addEventListener("input", toggleSendCode);
+
+      function isValidPassword(password) {
+        const regex =
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d!@#$%^&*]{8,}$/;
+        return regex.test(password);
+      }
+
+      sendCodeBtn.addEventListener("click", function () {
+        const password = passwordInput.value;
+        const confirmPassword = confirmPasswordInput.value;
+
+        if (!isValidPassword(password)) {
+          alert(
+            "Password must be atleast 8 characters long, include: \n - Uppercase letter\n - Lowercase letter\n - Number\n - Speacial Character"
+          );
+          return;
+        }
+
+        if (password !== confirmPassword) {
+          alert("Passwords do not match");
+          return;
+        }
+        alert("Code sent successfully (mock action).");
+      });
 
       function toggleSendCode() {
         sendCodeBtn.disabled = !(emailInput.value && phoneInput.value);
