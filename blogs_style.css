@@ -98,6 +98,10 @@ main {
   padding: 140px 40px 0 0;
 }
 
+.hidden {
+  display: none;
+}
+
 .hero h2 {
   color: white;
   padding: 0 0 30px 0;
@@ -133,8 +137,15 @@ main {
   }
 }
 
-.hidden {
-  display: none;
+.hero2 h2 {
+  color: yellowgreen;
+  padding: 0 0 30px 0;
+}
+
+.hero2 p {
+  color: white;
+  font-size: 20px;
+  padding: 0 0 50px 0;
 }
 
 .button1 {
@@ -152,6 +163,26 @@ main {
 }
 
 .button1:hover {
+  background-color: yellowgreen;
+  color: black;
+  transition-duration: 0.8s;
+}
+
+.button2 {
+  width: 100%;
+  text-align: left;
+  border-color: greenyellow;
+  color: greenyellow;
+  background-color: black;
+  border-width: 2px;
+  padding: 5px;
+  border: 2px solid yellowgreen;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.button2:hover {
   background-color: yellowgreen;
   color: black;
   transition-duration: 0.8s;
