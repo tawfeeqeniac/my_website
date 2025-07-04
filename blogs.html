@@ -38,6 +38,23 @@
           </p>
         </div>
       </section>
+
+      <section class="hero2">
+        <button class="button2" onclick="content2()">DEEP WORK</button>
+        <div id="deepwork" class="hidden">
+          <h2>Deep Work by Cal Newport</h2>
+          <p>
+            I would like to share the key ideas that I found important in this
+            book. The reason I chose to read it is because it explores the
+            philosophy of deep work — the ability to focus intensely on
+            cognitively demanding tasks — and how modern digital tools often act
+            as barriers to achieving that focus. The author argues that deep
+            work not only enhances productivity and learning but can also lead
+            to a flow state, where one becomes fully immersed and deeply
+            satisfied in the process of work itself.
+          </p>
+        </div>
+      </section>
     </main>
     <footer>@2025 Tawfeeq. All rights reserved.</footer>
     <script>
@@ -51,6 +68,21 @@
         } else {
           content.classList.add("hidden");
           button.textContent = "SHOW INTRO";
+        }
+      }
+    </script>
+
+    <script>
+      function content2() {
+        const content = document.getElementById("deepwork");
+        const button = document.querySelector(".button2");
+
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden");
+          button.textContent = "Close";
+        } else {
+          content.classList.add("hidden");
+          button.textContent = "DEEP WORK";
         }
       }
     </script>
