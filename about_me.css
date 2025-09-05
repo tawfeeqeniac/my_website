@@ -102,7 +102,7 @@ main {
 }
 
 .hero h2{
-  font-size: 50px; 
+  font-size: 20px; 
   font-family: Georgia, "Times New Roman", Times, serif; 
   text-align: center; 
   padding: 200px 0 0 0; 
@@ -118,5 +118,6 @@ main {
 { 0% { color: yellowgreen; } 
  50% { color: red; } 
  100% { color: magenta; } }
+
 
 
