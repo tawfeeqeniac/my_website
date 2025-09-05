@@ -109,7 +109,7 @@ main {
   animation: colorChange 2.5s infinite alternate;}
 
 @media (max-width: 600px)
-{ .hero h2 { font-size: 30px; } }
+{ .hero h2 { font-size: 12px; } }
 
 .hero h3{
   color : white;}
@@ -118,6 +118,7 @@ main {
 { 0% { color: yellowgreen; } 
  50% { color: red; } 
  100% { color: magenta; } }
+
 
 
 
