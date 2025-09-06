@@ -208,16 +208,17 @@ main {
   transition-duration: 0.8s;
 }
 
-.hero2 h2 {
+.hero3 h2 {
   color: yellowgreen;
   padding: 0 0 30px 0;
 }
 
-.hero2 p {
+.hero3 p {
   color: white;
   font-size: 20px;
   padding: 0 0 50px 0;
 }
+
 
 
 
