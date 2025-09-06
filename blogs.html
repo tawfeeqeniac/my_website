@@ -55,6 +55,12 @@
           </p>
         </div>
       </section>
+
+      <section class= "hero3">
+        <button class="button3" onclick = "content3()"> Philosophy of Math & Computer Science</button>
+        <div id="M&C" class = hidden">
+        <h2>Math as a foundation for Computer Science</h2>
+      </section>
     </main>
     <footer>@2025 Tawfeeq. All rights reserved.</footer>
     <script>
@@ -86,5 +92,21 @@
         }
       }
     </script>
+
+    <script>
+      function content3(){
+        const content = document.getElementById("M&C");
+        const button = document.querySelector(".button3");
+
+        if(content.classList.contains("hidden")){
+          content.classList.remove("hidden");
+          button.tectContent = "Close";
+        } else{
+          content.classList.add("hidden");
+          button.tectContent = "Philosophy of Math & Computer Science";
+        }
+      }
+    </script>
   </body>
 </html>
+
