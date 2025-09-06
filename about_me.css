@@ -136,6 +136,13 @@ main {
 }
 
 
+.button1:hover {
+  background-color: yellowgreen;
+  color: black;
+  transition-duration: 0.8s;
+}
+
+
 
 
 
