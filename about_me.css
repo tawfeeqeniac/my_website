@@ -119,6 +119,23 @@ main {
  50% { color: red; } 
  100% { color: magenta; } }
 
+.hidden{
+  display: none;}
+.button1 {
+  width: 100%;
+  text-align: left;
+  border-color: greenyellow;
+  color: greenyellow;
+  background-color: black;
+  border-width: 2px;
+  padding: 5px;
+  border: 2px solid yellowgreen;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+
 
 
 
