@@ -25,11 +25,36 @@
         <h2>I love asking questions, learning across disciplines, and exploring how science and technology can make sense of life and our world.</h2>
         <h3>I am endlessly curious about the world around me, especially where philosophy, life sciences, biology, and technology meet. My love for STEM comes from a desire to understand how different fields connect and how their intersections can shape new ideas, discoveries, and solutions. This website is a reflection of that curiosity and my journey of learning across disciplines.</h3>
       </section>
+
+<section class = "hero2">
+  <buton class="button1" onclick="content1()">MATH & COMPUTER SCIENCE"</buton>
+<div id = "M&C" class = "hidden">
+  <h2>Philosoy of Math & Computer Science</h2>
+
+
+</section>
     </main>
 
     <footer>@2025 Tawfeeq. All rights reserved.</footer>
+    <script>
+      function content1(){
+        const content = document.getElementById("M&C");
+        const button = document.querySelector(".button1");
+
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden");
+          button.textContent="Hide";
+        }
+        else {
+          content.classList.add("hidden");
+          button.textContent = "Math & Computer Science";
+        }
+      }
+        
+    </script>
   </body>
 </html>
+
 
 
 
